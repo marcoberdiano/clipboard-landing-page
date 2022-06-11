@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [https://clipboard-landing-page-tau-flax.vercel.app/](https://clipboard-landing-page-tau-flax.vercel.app/)
 
 ## My process
 
