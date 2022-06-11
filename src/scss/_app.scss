@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+@import './colors';
+@import './header';
+@import './main';
+@import './footer';
+.app-container{
+    h2{
+        font-size: 2.5em;
+        color: $DarkGrayishBlue;
+    }
+    p{
+        color: $GrayishBlue;
+        font-size: 1.5em;
+    }
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        .btn{
+            text-shadow: 0px 1px rgba(0, 0, 0, 0.458);
+            margin:3em 1em;
+            padding: 1em 1.5em;
+            border: none;
+            border-radius:30px;
+            color:#FFF;
+            font-size:1.2em;
+            box-shadow: 0px 4px rgba(0, 0, 0, 0.458);
+            transform: scale(1,1);
+            transition: transform 0.2s;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1,1.1);
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .app-container{
+        h2{
+            font-size: 2em;
+        }
+        p{
+            font-size: 1.2em;
+        }
+        .btn-container{
+            flex-direction: column;
+            margin: 1em;
+            .btn{
+                margin: 1em;
+            }
+        }
+    }
+}

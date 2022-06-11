@@ -1,0 +1,87 @@
+.footer-container{
+    padding: 0em 2em;
+    background-color: $GrayishBlue;
+    .link{
+        color: $DarkGrayishBlue;
+        font-size: 1em;
+        margin: 0.8em 0em;
+        &:hover{
+            color: $StrongCyan;
+            cursor: pointer;
+        }
+    }
+    .footer{
+        .attribution{
+            color: $DarkGrayishBlue;
+            a{
+                color: $LightBlue;
+                text-decoration: none;
+            }
+        }
+        padding: 1em;
+        margin-left: 10em;
+        margin-right: 10em;
+        display: flex;
+        gap: 3em;
+        justify-content: space-around;
+        align-items: center;
+        .logo{
+            width: 40px;
+        }
+        .links{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .footer-links, .social-links{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+            }
+            .social-links{
+                align-items: center;
+                .social{
+                    transform: scale(1,1);
+                    transition: transform 0.2s;
+                    cursor: pointer;
+                    &:hover path {
+                        fill: $StrongCyan;
+                    }
+                    &:hover{
+                        transform: scale(1.4,1.4);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer-container{
+        .link{
+            padding: 0.8em;
+            margin: 0em;
+        }
+        .footer{
+            flex-direction: column;
+            margin-left: 2em;
+            margin-right: 2em;
+            .links{
+                flex-direction: column;
+                .footer-links{
+                    text-align: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .footer-links{
+                    gap: 0px;
+                }
+                .social-links{
+                    margin: 1em 0em;
+                }
+            }
+            
+        }
+    }
+}

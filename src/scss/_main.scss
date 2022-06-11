@@ -1,0 +1,129 @@
+.main-container {
+    .section-head{
+        width:100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7em;
+        padding: 0em 12em;
+        .section-title{
+            padding: 20px 0px;
+        }
+    }
+    .track-container{
+        .grid-track{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .grid-item {
+                .grid-img{
+                    margin-left: -2em;
+                }
+            }
+            .itens{
+                width: 70%;
+                //border: 2px solid red;
+                display: flex;
+                flex-direction: column;
+                gap: 5em;
+                .item-title{
+                    color: $DarkGrayishBlue;
+                    font-size: 2em;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .clipboard-container{  
+        padding-top: 10em;
+        .img-container{
+            text-align: center;
+            padding: 0em 5em;
+            .img{
+                width: 100%;
+                max-width: 70em;
+            }
+        }
+    }
+    .supercharge-container{
+        .tools-container{
+            margin-top: 5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .tool{
+                .tool-title{
+                    font-size: 1.5em;
+                    padding: 0.8em;
+                }
+                .tool-desc{
+                    font-size: 1.3em;
+                }
+            }
+          
+        }
+    }
+    .company-container{
+        width: 100%;
+        margin-bottom: 5em;
+        .companies{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5em;
+        }
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .main-container {
+        .section-head{
+            padding: 0em 2em;
+        }
+        
+        .track-container{
+            .grid-track{
+                grid-template-columns: 1fr;
+                gap: 50px;
+                .grid-item {
+                    text-align: center;
+                    .grid-img{
+                        width: 90%;
+                        margin-left: 0em;
+                    }
+                }
+                .itens{
+                    width: 100%;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            
+            
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .main-container {
+        .supercharge-container{
+            .tools-container{
+                margin-top: 2em;
+                padding: 1em;
+                flex-direction: column;
+            }
+        }
+        .company-container{
+            .companies{
+                flex-direction: column;
+            }
+            
+        }
+    }
+}
